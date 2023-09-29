@@ -1,6 +1,6 @@
 # NVIDIA DeepStream ROI-Based Detection and Tracking
 
-This project is designed to perform object detection specifically on Regions of Interest (ROIs) within video frames. It leverages the capabilities of Nvidia's DeepStream SDK.
+This project is designed to perform object detection on Regions of Interest (ROIs) within video frames. It leverages the capabilities of Nvidia's DeepStream SDK. Specifically, this code is a pipeline that takes a video as an input, runs object detection and tracking on the defined RoIs on video frames, and outputs the detected bounding boxes and their IDs. It also creates an output video file with overlayed bounding boxes and their ID on the video frames.
 
 ## Configuration Files
 
@@ -8,7 +8,7 @@ There are two primary configuration files that guide the processing:
 
 ### preprocess-tiling-config.txt
 
-This file allows you to set the Regions of Interest (ROIs) for the pipeline. Modify the coordinates as required to focus on specific areas in your video feed.
+This file allows you to set the Regions of Interest (ROIs) for the pipeline. Modify the coordinates as required to focus on specific areas in your video feed. Please refer to the [Nvdspreprocessor document](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvdspreprocess.html) to learn about how to modify the configuration file to fit your case. 
 
 ### pipeline-config.yml
 
@@ -19,12 +19,14 @@ Use this file to configure the various pipeline parameters, including details ab
 ## Getting Started
 
 1. Clone the repository:
+```bash
+cd /opt/nvidia/deepstream/deepstream-6.2/sources/
 git clone https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps
-
-2. Navigate to the project folder:
+```
+3. Navigate to the project folder:
 cd DeepStream-Video-RoI-Detection-Tracking
 
-3. Building the Code
+4. Building the Code
 
 Before building, ensure you set the correct CUDA version:
 
