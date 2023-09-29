@@ -1,6 +1,6 @@
 # NVIDIA DeepStream ROI-Based Detection and Tracking
 
-This project is designed to perform object detection specifically on Regions of Interest (ROIs) within video frames. It leverages the capabilities of Nvidia's DeepStream SDK.
+This project is designed to perform object detection on Regions of Interest (ROIs) within video frames. It leverages the capabilities of Nvidia's DeepStream SDK. Specifically, this code is a pipeline that takes a video as an input, runs object detection and tracking on the defined RoIs on video frames, and outputs the detected bounding boxes and their IDs. It also creates an output video file with overlayed bounding boxes and their ID on the video frames.
 
 ## Configuration Files
 
