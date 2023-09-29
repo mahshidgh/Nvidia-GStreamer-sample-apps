@@ -8,7 +8,7 @@ There are two primary configuration files that guide the processing:
 
 ### preprocess-tiling-config.txt
 
-This file allows you to set the Regions of Interest (ROIs) for the pipeline. Modify the coordinates as required to focus on specific areas in your video feed. Please refer to the \url{Nvdspreprocessor document}{https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvdspreprocess.html} to learn about how to modify the configuration file to fit your case. 
+This file allows you to set the Regions of Interest (ROIs) for the pipeline. Modify the coordinates as required to focus on specific areas in your video feed. Please refer to the [Nvdspreprocessor document][https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvdspreprocess.html] to learn about how to modify the configuration file to fit your case. 
 
 ### pipeline-config.yml
 
