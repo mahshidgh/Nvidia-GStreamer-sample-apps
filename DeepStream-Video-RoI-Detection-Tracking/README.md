@@ -19,12 +19,14 @@ Use this file to configure the various pipeline parameters, including details ab
 ## Getting Started
 
 1. Clone the repository:
+```bash
+cd /opt/nvidia/deepstream/deepstream-6.2/sources/
 git clone https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps
-
-2. Navigate to the project folder:
+```
+3. Navigate to the project folder:
 cd DeepStream-Video-RoI-Detection-Tracking
 
-3. Building the Code
+4. Building the Code
 
 Before building, ensure you set the correct CUDA version:
 
