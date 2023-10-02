@@ -22,6 +22,7 @@ To use the Nvidia GStreamer pipelines in this repository, you'll need to set up 
 
    ```shell
    git clone https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps.git
+   ```
 
 ## Citation
 
