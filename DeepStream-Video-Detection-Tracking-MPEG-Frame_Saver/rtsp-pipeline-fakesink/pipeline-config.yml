@@ -1,0 +1,44 @@
+uridecodebin:
+  #uri: file://chunks/inf.mp4
+  #uri: rtsp://admin:majmun12@10.110.12.3:554//Streaming/Channels/1
+
+rtspsrc:
+  location: rtsp://<username>:<password>@<uri>
+  protocols: 0x00000004
+  latency: 2000
+  drop-on-latency: TRUE
+  timeout: 5000000
+
+decoder:
+  cudadec-memtype: 0
+  num-extra-surfaces: 1
+
+fakesink:
+  sync: 0
+ 
+streammux:
+  batch-size: 1
+  width: 3840
+  height: 2160
+  live-source: 1
+
+
+
+nvinfer:
+  config-file-path: config_infer_primary_yoloV8.txt
+
+
+filesink:
+  location: output.mp4
+  sync: 0
+  
+nvtracker:
+  tracker-width: 832
+  tracker-height: 832
+  ll-lib-file: /opt/nvidia/deepstream/deepstream-6.2/lib/libnvds_nvmultiobjecttracker.so
+  ll-config-file: /opt/nvidia/deepstream/deepstream-6.2/sources/DeepStream-Yolo/config_tracker_NvDCF_perf.yml
+  gpu-id: 0
+  enable-batch-process: TRUE
+  enable-past-frame: TRUE
+  display-tracking-id: TRUE
+  compute-hw: 1
