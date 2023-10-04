@@ -27,7 +27,7 @@ To use the Nvidia GStreamer pipelines in this repository, you'll need to set up 
 
 If you use or refer to the code in this repository, please consider citing it as follows:
 
-@misc{Mahshid007,
+@misc{Mahshidgh,
    title={Nvidia GStreamer Sample Apps},
    howpublished = {\url{https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps}},
    author={Mahshid Ghasemi},
