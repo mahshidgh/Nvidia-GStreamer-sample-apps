@@ -23,10 +23,10 @@ Use this file to configure the various pipeline parameters, including details ab
 cd /opt/nvidia/deepstream/deepstream-6.2/sources/
 git clone https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps
 ```
-3. Navigate to the project folder:
+2. Navigate to the project folder:
 cd DeepStream-Video-RoI-Detection-Tracking
 
-4. Building the Code
+3. Building the Code
 
 Before building, ensure you set the correct CUDA version:
 
@@ -40,11 +40,11 @@ Then, build the project:
 sudo make
 ```
 
-5. Update the configuration files as necessary:
+4. Update the configuration files as necessary:
 - Define ROIs in `preprocess-tiling-config.txt`
 - Set pipeline parameters in `pipeline-config.yml`
 
-6. Run the application:
+5. Run the application:
 ```bash
 ./tiling-ds-pipeline pipeline-config.yml
 ```
