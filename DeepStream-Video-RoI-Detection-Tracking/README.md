@@ -14,7 +14,7 @@ This file allows you to set the Regions of Interest (ROIs) for the pipeline. Mod
 
 Use this file to configure the various pipeline parameters, including details about the detection model.
 
-**Note:** In the sample config files we are using YOLOv8 object detection with Nvidia DCF-based tracker. When using a model other than YOLOv8, it's crucial to ensure the `input-tensor-name` in the preprocessing configuration file (`preprocess-tiling-config.txt`) matches the expected input tensor name of the new model. This project is set up with YOLOv8 in mind, so modifications might be required for other models. You also need to update 'config-file-path' of 'nvinfer' inside 'pipeline-config.yml' file.
+**Note:** In the sample config files we are using YOLOv8 object detection with Nvidia DCF-based tracker. When using a model other than YOLOv8, it's crucial to ensure the `input-tensor-name` in the preprocessing configuration file (`preprocess-tiling-config.txt`) matches the expected input tensor name of the new model. This project is set up with YOLOv8 in mind, so modifications might be required for other models. You also need to update `config-file-path` of `nvinfer` inside `pipeline-config.yml` file.
 
 ## Getting Started
 
