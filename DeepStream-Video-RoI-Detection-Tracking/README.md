@@ -24,8 +24,9 @@ cd /opt/nvidia/deepstream/deepstream-6.2/sources/
 git clone https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps
 ```
 2. Navigate to the project folder:
+```bash
 cd DeepStream-Video-RoI-Detection-Tracking
-
+```
 3. Building the Code
 
 Before building, ensure you set the correct CUDA version:
