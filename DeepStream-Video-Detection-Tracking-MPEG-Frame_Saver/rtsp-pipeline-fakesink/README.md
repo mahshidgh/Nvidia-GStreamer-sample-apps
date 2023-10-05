@@ -21,7 +21,7 @@ While this pipeline stands efficient on its own, it is architected to be interfa
 - **Research and Development**: For teams looking to build upon or refine object detection capabilities, having access to both bbox data and the original frames can be invaluable.
 
 
-## RST Pipleine with Fakesink 
+## RTSP Pipleine with Fakesink 
 This pipeline runs object detection and tracking on video frames with specified frame rate. The output of this pipeline are the selected frames, and the bounding box coordinates and the IDs.
 ### Instructions
 1. Navigate to the folder:
