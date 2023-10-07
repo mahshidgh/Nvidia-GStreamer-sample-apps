@@ -1,6 +1,5 @@
 uridecodebin:
   #uri: file://chunks/inf.mp4
-  #uri: rtsp://admin:majmun12@10.110.12.3:554//Streaming/Channels/1
   uri: file://videos/2.mp4
  
 streammux:

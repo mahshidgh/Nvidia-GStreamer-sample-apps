@@ -548,8 +548,8 @@ int main(int argc, char *argv[])
         g_printerr("One or more elements could not be created. Exiting.\n");
         return -1;
     }
-    g_object_set(G_OBJECT(tracker), "tracker-width", 832, "tracker-height", 832, "ll-lib-file", "/opt/nvidia/deepstream/deepstream-6.2/lib/libnvds_nvmultiobjecttracker.so", "ll-config-file", "/opt/nvidia/deepstream/deepstream-6.2/sources/DeepStream-Yolo/config_tracker_NvDCF_perf.yml",
-                 "gpu-id", 0, "enable-batch-process", TRUE, "enable-past-frame", TRUE, "display-tracking-id", TRUE, "compute-hw", 1, NULL);
+    //g_object_set(G_OBJECT(tracker), "tracker-width", 832, "tracker-height", 832, "ll-lib-file", "/opt/nvidia/deepstream/deepstream-6.2/lib/libnvds_nvmultiobjecttracker.so", "ll-config-file", "/opt/nvidia/deepstream/deepstream-6.2/sources/DeepStream-Yolo/config_tracker_NvDCF_perf.yml",
+    //             "gpu-id", 0, "enable-batch-process", TRUE, "enable-past-frame", TRUE, "display-tracking-id", TRUE, "compute-hw", 1, NULL);
     // Set the properties of the elements
     if (g_str_has_suffix(argv[1], ".yml") || g_str_has_suffix(argv[1], ".yaml"))
     {
@@ -557,6 +557,7 @@ int main(int argc, char *argv[])
         nvds_parse_streammux(streammux, argv[1], "streammux");
         nvds_parse_gie(nvinfer, argv[1], "nvinfer");
         nvds_parse_file_sink(sink, argv[1], "filesink");
+        nvds_parse_tracker(tracker, argv[1], "nvtracker");
     }
     /* Modify the source's properties */
     ////// Second floor camera

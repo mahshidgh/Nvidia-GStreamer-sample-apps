@@ -24,6 +24,12 @@ To use the Nvidia GStreamer pipelines in this repository, you'll need to set up 
    git clone https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps.git
    ```
 2. Navigate to the directory that contains your preferred pipeline, and follow the instructions provided.
+
+## News
+A whole set of dynamic pipelines are coming!! They will be added to folder `Dynamic-pipeline`.
+Compared to static pipeline, in dynamic pipelines you can chnage the configuration of the pipeline online. For example, changing resolution, frame-rate, source, model, etc.
+
+
 ## Citation
 
 If you use or refer to the code in this repository, please consider citing it as follows:

@@ -1,0 +1,20 @@
+uridecodebin:
+  #uri: file://chunks/inf.mp4
+  uri: rtsp://34.148.223.212:8554/s1
+ 
+streammux:
+  batch-size: 1
+  width: 3840
+  height: 2160
+  live-source: 1
+
+
+
+nvinfer:
+  config-file-path: ./config_infer_primary_yoloV8.txt
+
+
+filesink:
+  location: output.mp4
+  sync: 0
+  
