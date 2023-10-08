@@ -2,7 +2,7 @@
 
 ## Overview
 
-This DeepStream pipeline provides functionality to process video streams fetched from an RTSP source. The pipeline handles video frames, decodes them, sets the framerate, and sends them through an inference model for object detection. Subsequently, objects detected are then tracked using NVIDIA's tracker. The final results can be visualized with bounding boxes around detected objects and their tracking IDs.
+This DeepStream pipeline provides functionality to process video streams fetched from an RTSP source. The pipeline handles video frames, decodes them, sets the framerate, and sends them through an inference model for object detection. Subsequently, objects detected are then tracked using NVIDIA's tracker. The final results can be visualized with bounding boxes around detected objects and their tracking IDs. We are using `YOLOv8` as the object detector model and `Nvidia DCF tracker` for tracking. You can change these models in the config file `pipeline_config.yml`.
 
 
 ## How to Set Up and Run
@@ -40,6 +40,7 @@ nvtracker:
 ```
 
 **Changing Parameters**:
+- A sample config file is in `pipeline_config.yml`.
 - To change the RTSP source, modify the `location` parameter under `rtspsrc`.
 - To adjust the frame rate, modify the `framerate` parameter under `capsfilter`.
 - To use a different model for inference, update the `config-file-path` parameter under `nvinfer`.
@@ -53,7 +54,7 @@ sudo make
 To run the pipeline:
 
 ```bash
-./rtsp-ds path_to_config_file.yml
+./rtsp-ds pipeline_config.yml
 ```
 
 
