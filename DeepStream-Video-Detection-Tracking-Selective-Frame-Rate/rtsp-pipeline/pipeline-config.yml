@@ -1,0 +1,41 @@
+rtspsrc:
+  location: rtsp://34.148.223.212:8554/s1
+  #protocols: 0x00000004
+  latency: 1000
+  drop-on-latency: 1  # In YAML, TRUE can be represented as 1 and FALSE as 0
+  timeout: 5000000
+ 
+streammux:
+  batch-size: 1
+  width: 3840
+  height: 2160
+  live-source: 1
+  enable-padding: 0
+  nvbuf-memory-type: 0
+  attach-sys-ts: 1
+
+capsfilter:
+  framerate: 30
+
+nvinfer:
+  config-file-path: ./config_infer_primary_yoloV8.txt
+  gpu-id: 0
+  #nvbuf-memory-type: 0
+  batch-size: 1
+  input-tensor-meta: 0
+
+nvtracker:
+  tracker-width: 832
+  tracker-height: 832
+  ll-lib-file: /opt/nvidia/deepstream/deepstream-6.2/lib/libnvds_nvmultiobjecttracker.so
+  ll-config-file: /opt/nvidia/deepstream/deepstream-6.2/sources/DeepStream-Yolo/config_tracker_NvDCF_perf.yml
+  gpu-id: 0
+  enable-batch-process: 1
+  enable-past-frame: 1
+  display-tracking-id: 1
+  compute-hw: 1
+
+
+filesink:
+  location: output.mp4
+  sync: 0
