@@ -71,5 +71,5 @@ cd ../
 ## Related Pipelines
 GStreamer object detection and tracking pipleine with the capability of setting the frame-rate is in:
 ``
-Nvidia-GStreamer-sample-apps/DeepStream-Video-Detection-Tracking-Slective-Frame-Rate
+Nvidia-GStreamer-sample-apps/DeepStream-Video-Detection-Tracking-Selective-Frame-Rate
 ``
