@@ -1,0 +1,16 @@
+uridecodebin:
+  uri: file://videos/o0.mp4
+
+
+streammux:
+  batch-size: 1
+  width: 3840
+  height: 2160
+
+
+
+nvinfer:
+  config-file-path: config_infer_primary_yoloV8-832.txt
+
+filesink:
+  location: output.mp4
