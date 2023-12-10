@@ -1,4 +1,4 @@
-# GStreamer Pipeline with YOLO Object Detection
+# Dynamic GStreamer Pipeline with YOLO Object Detection
 
 This repository contains a GStreamer pipeline integrated with the YOLO object detector. The primary function of this pipeline is to process a sequence of video files and output object detection results as well as logging the inference latency in seconds.
 
