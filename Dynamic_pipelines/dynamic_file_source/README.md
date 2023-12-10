@@ -35,4 +35,3 @@ Ensure that all configurations are set correctly before executing the pipeline.
 ---
 
 **Note**: This repository assumes you have the necessary dependencies for GStreamer and YOLO object detection installed on your system.
-```
