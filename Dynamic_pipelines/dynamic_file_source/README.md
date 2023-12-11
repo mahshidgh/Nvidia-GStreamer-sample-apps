@@ -18,7 +18,7 @@ This repository contains a GStreamer pipeline integrated with the YOLO object de
 
 - **Configuration**: Before running the pipeline, make sure to edit the `config_infer_primary_yoloV8-832.txt` file. This configuration file should point to the location of your YOLO weights, the configuration file, and the TensorRT engine file.
 
-## Installation and Running
+## Compilation and Running
 
 1. **Compilation**: To compile the pipeline, run the following command:
    ```bash
