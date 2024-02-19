@@ -34,11 +34,11 @@ Compared to static pipeline, in dynamic pipelines you can chnage the configurati
 
 If you use or refer to the code in this repository, please consider citing it as follows:
 
-@misc{Mahshidgh,
-   title={Nvidia GStreamer Sample Apps},
-   howpublished = {\url{https://github.com/mahshidgh/Nvidia-GStreamer-sample-apps}},
-   author={Mahshid Ghasemi},
-   publisher = {{GitHub}},
-   journal = {{GitHub Repo.}},
-   year={2023},
+@article{Ghasemi2023RealtimeMA,
+  title={Real-time Multi-Camera Analytics for Traffic Information Extraction and Visualization},
+  author={Mahshid Ghasemi and Sofia Kleisarchaki and Thomas Calmant and Jiawei Lu and Shivam Ojha and Zoran Kosti{\'c} and Levent G{\"u}rgen and Gil Zussman and Javad Ghaderi},
+  journal={2023 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)},
+  year={2023},
+  pages={288-290},
+  url={https://api.semanticscholar.org/CorpusID:259217912}
 }
